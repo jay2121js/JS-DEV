@@ -1,0 +1,179 @@
+  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@900&family=Pacifico&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+*{  
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100svw;
+    background-color: #F0EBE3;    
+}
+header{
+    position: absolute;
+    width: 90svw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo{
+    font-weight: 900;
+    
+}
+.right_nav{
+    width: fit-content;
+    display: flex;
+}
+.right_nav i{
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.hero_section{
+    width: 90svw;
+    padding: 0px 5svw;
+    background: rgb(55, 51, 45);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(240,235,227,1) 100%);
+}
+.hero_title{
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.hero_heading{
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 0px #000 , -3px -3px 0px #000;
+    font-size: clamp(2.5rem, 2.1691rem + 1.7647vw, 4.375rem);
+    font-family: 'Jost', sans-serif;
+}
+.herotitle_heading{
+    font-size: clamp(0.625rem, 0.5699rem + 0.2941vw, 0.9375rem);
+}
+.herotitle_heading span{
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(0.875rem, 0.7647rem + 0.5882vw, 1.5rem);
+}
+.hero_label{
+    font-size: clamp(0.625rem, 0.5809rem + 0.2353vw, 0.875rem);
+}
+.hero_label span{
+     color: #29A587;
+}
+.hero_subheading{
+    font-size: clamp(0.625rem, 0.5147rem + 0.5882vw, 1.25rem);
+}
+.hero_downloadcv{
+    width: fit-content;
+    margin: 20px auto;    
+}
+.hero_downloadcv a:first-child::after{
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 2px;
+    top: 50%;
+    right: -40px;
+    transform: translate(0px, -50%);
+    background-color: #000;
+}
+
+.hero_downloadcv a:first-child{
+    padding: 10px 40px;
+    margin-right: 50px;
+    border: 2px solid black;
+    border-radius: 30px;
+    position: relative;
+
+}
+.hero_downloadcv a{
+    font-size: clamp(0.75rem, 0.6618rem + 0.4706vw, 1.25rem);
+    text-decoration: none;
+    color: #000;
+}
+@media screen and (300px<=width<=700px) {
+    .hero_section{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 5%;
+        text-align: center;
+    }
+    .hero_title p{
+        margin: 5px 0px; 
+    }
+    .hero_image{
+        margin: 2rem 0px;
+        width: 90%;
+    }
+    .hero_image img{
+        width: 100%;
+    }
+    .hero_downloadcv a:first-child::after{
+        top: 100%;
+        left: 50%;
+        width: 2px;
+        height: 40px;
+        transform: translate(-50%, 0%);
+    }
+    .hero_downloadcv a:first-child{
+        margin: 0px 0px 50px 0px;
+    }
+    .hero_downloadcv{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_subheading{
+        width: 90%;
+    }
+}
+@media screen and (width>700px) {
+    .hero_section{
+        width: 100%;
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner_herosection{
+        position: relative;
+        width: min(90%, 1500px);
+    }
+    .hero_title p{
+        margin: 15px 0px; 
+    }
+    .hero_image{
+        position:absolute;
+        top: 50%;
+        right: 5%;
+        margin: 2rem 0px;
+        width: min(45%, 750px);
+        transform: translate(-5%,-50%);
+    }
+    .hero_image img{
+        width: 100%;
+    }
+    .hero_downloadcv a:first-child::after{
+        top: 50%;
+        right: -40px;
+        width: 40px;
+        height: 2px;
+        transform: translate(0%, -50%)
+    }
+    .hero_downloadcv a:first-child{
+        margin: 0px 50px 0px 0px;
+    }
+    .hero_downloadcv{
+        margin: 50px 0px;
+    }
+    .hero_subheading p{
+        width: min(45% , 700px);
+        margin: 30px 0;
+    }
+}
