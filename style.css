@@ -70,7 +70,7 @@ header{
     font-weight: 800;
     letter-spacing: 1px;
     color: var(--black);
-    background: url(/images/circles.png),var(--dark_main);
+    background: url(./images/circles.png),var(--dark_main);
     background-repeat: no-repeat;
     background-position: -40px -20px;
     text-transform: uppercase;
