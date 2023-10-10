@@ -5,6 +5,7 @@ modes.addEventListener('click',()=>{
         var root = document.querySelector(":root");
         root.style.setProperty('--main', '#252B33');
         root.style.setProperty('--black', '#fff');
+        root.style.setProperty('--bw_border', '#000');
         root.style.setProperty('--dark_main', '#3e4752');
         root.style.setProperty('--hero_lgrad', '#252B33');
         root.style.setProperty('--btn_shadow', '#44494E');
@@ -15,6 +16,7 @@ modes.addEventListener('click',()=>{
         var root = document.querySelector(":root");
         root.style.setProperty('--main', '#F0EBE3');
         root.style.setProperty('--black', '#000');
+        root.style.setProperty('--bw_border', '#fff');
         root.style.setProperty('--dark_main', '#F0EBE3');
         root.style.setProperty('--btn_shadow', '#CBCAC9');
         root.style.setProperty('--hero_lgrad', 'linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(240,235,227,1) 100%)');

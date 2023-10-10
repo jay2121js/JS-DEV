@@ -6,6 +6,7 @@
     --black:#000;
     --dark_main:#F0EBE3;
     --btn_shadow:#CBCAC9;
+    --bw_border:#fff;
     --hero_lgrad: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(240,235,227,1) 100%);
 }
 
@@ -184,8 +185,8 @@ header{
     
 }
 .hero_downloadcv a:first-child:hover{
-    color: #fff;
-    outline: 2px solid #fff;
+    color: var(--bw_border);
+    outline: 2px solid var(--bw_border);
     outline-offset: -4px;
 }
 .hero_downloadcv a{
