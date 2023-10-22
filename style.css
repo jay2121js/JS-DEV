@@ -282,6 +282,7 @@ header{
 .card{
     position: relative;
     user-select: none;
+    scroll-snap-align: start;
     opacity: 0;
     width: min(90svw,270px);
     flex-shrink: 0;
